@@ -13,5 +13,10 @@ namespace RulesOfTheGame.Controllers
         {
             return View();
         }
+
+        public ActionResult Bubble_Pop()
+        {
+            return View();
+        }
     }
 }
