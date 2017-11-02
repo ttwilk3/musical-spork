@@ -1,0 +1,39 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script>
+    var root = "@Url.Content("~")";
+</script>
+
+<title>Guide The Goat</title>
+<script type="text/javascript" src="~/Content/Guide_The_Goat/js/phaser.min.js"></script>
+<script type="text/javascript" src="~/Content/Guide_The_Goat/js/boot.js"></script>
+<script type="text/javascript" src="~/Content/Guide_The_Goat/js/preload.js"></script>
+<script type="text/javascript" src="~/Content/Guide_The_Goat/js/gametitle.js"></script>
+<script type="text/javascript" src="~/Content/Guide_The_Goat/js/main.js"></script>
+<script type="text/javascript" src="~/Content/Guide_The_Goat/js/gameover.js"></script>
+<style type="text/css">
+    body {
+        margin: 0;
+    }
+</style>
+<script type="text/javascript">
+	(function() {
+
+			//Create a new game that fills the screen
+			game = new Phaser.Game(window.innerWidth * window.devicePixelRatio, window.innerHeight * window.devicePixelRatio, Phaser.AUTO);
+
+			//Add all states
+			game.state.add("Boot", Boot);
+			game.state.add("Preload", Preload);
+			game.state.add("GameTitle", GameTitle);
+			game.state.add("Main", Main);
+			game.state.add("GameOver", GameOver);
+
+			//Start the first state
+			game.state.start("Boot");
+
+	})();
+</script>
+

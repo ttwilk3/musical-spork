@@ -221,6 +221,15 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Guide_The_Goat\js\Dirt2.png" />
+    <Content Include="Content\Guide_The_Goat\js\Key.png" />
+    <Content Include="Content\Guide_The_Goat\js\player.png" />
+    <Content Include="Content\Guide_The_Goat\js\boot.js" />
+    <Content Include="Content\Guide_The_Goat\js\gameover.js" />
+    <Content Include="Content\Guide_The_Goat\js\gametitle.js" />
+    <Content Include="Content\Guide_The_Goat\js\main.js" />
+    <Content Include="Content\Guide_The_Goat\js\phaser.min.js" />
+    <Content Include="Content\Guide_The_Goat\js\preload.js" />
     <Content Include="Content\images\screenshots\Flappy-Bird-Screenshot.png" />
     <Content Include="Content\libraries\p5.dom.js" />
     <Content Include="Content\libraries\p5.js" />
@@ -234,6 +243,8 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\Guide_The_Goat\js\level1.json" />
+    <Content Include="Content\Guide_The_Goat\js\level2.json" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -289,9 +300,11 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Game\Flappy_Bird.cshtml" />
+    <Content Include="Views\Game\Guide_The_Goat.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\Guide_The_Goat\assets\" />
     <Folder Include="Content\images\Flappy_Bird\" />
   </ItemGroup>
   <ItemGroup>

@@ -13,5 +13,9 @@ namespace RulesOfTheGame.Controllers
         {
             return View();
         }
+        public ActionResult Guide_The_Goat()
+        {
+            return View();
+        }
     }
 }
