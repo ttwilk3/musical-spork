@@ -222,6 +222,10 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Bubble_Pop\bg.jpg" />
+    <Content Include="Content\Bubble_Pop\bubble.png" />
+    <Content Include="Content\Bubble_Pop\bubbles.js" />
+    <Content Include="Content\Bubble_Pop\draw.js" />
     <Content Include="Content\Guide_The_Goat\js\Dirt2.png" />
     <Content Include="Content\Guide_The_Goat\js\Key.png" />
     <Content Include="Content\Guide_The_Goat\js\player.png" />
@@ -231,6 +235,7 @@
     <Content Include="Content\Guide_The_Goat\js\main.js" />
     <Content Include="Content\Guide_The_Goat\js\phaser.min.js" />
     <Content Include="Content\Guide_The_Goat\js\preload.js" />
+    <Content Include="Content\images\screenshots\bubbleScreenshot.PNG" />
     <Content Include="Content\images\screenshots\Flappy-Bird-Screenshot.png" />
     <Content Include="Content\libraries\p5.dom.js" />
     <Content Include="Content\libraries\p5.js" />
@@ -307,6 +312,7 @@
     <Content Include="Views\Game\Flappy_Bird.cshtml" />
     <Content Include="Views\Game\Guide_The_Goat.cshtml" />
     <Content Include="Views\Game\TeeTrees.cshtml" />
+    <Content Include="Views\Game\Bubble_Pop.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
