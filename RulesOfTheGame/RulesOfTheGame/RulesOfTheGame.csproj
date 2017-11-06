@@ -25,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -234,6 +235,10 @@
     <Content Include="Content\libraries\p5.dom.js" />
     <Content Include="Content\libraries\p5.js" />
     <Content Include="Content\superherotheme.css" />
+    <Content Include="Content\Teetrees\game_logic.js" />
+    <Content Include="Content\Teetrees\stats.js" />
+    <Content Include="Content\Teetrees\TeetreesThumbnail.png" />
+    <Content Include="Content\Teetrees\texture.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -301,6 +306,7 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Game\Flappy_Bird.cshtml" />
     <Content Include="Views\Game\Guide_The_Goat.cshtml" />
+    <Content Include="Views\Game\TeeTrees.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -17,5 +17,10 @@ namespace RulesOfTheGame.Controllers
         {
             return View();
         }
+
+        public ActionResult TeeTrees()
+        {
+            return View();
+        }
     }
 }
