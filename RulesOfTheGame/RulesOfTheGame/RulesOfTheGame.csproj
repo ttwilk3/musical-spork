@@ -237,6 +237,7 @@
     <Content Include="Content\superherotheme.css" />
     <Content Include="Content\TeeTrees\game_logic.js" />
     <Content Include="Content\TeeTrees\stats.js" />
+    <Content Include="Content\images\screenshots\TeetreesThumbnail.png" />
     <Content Include="Content\TeeTrees\texture.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
