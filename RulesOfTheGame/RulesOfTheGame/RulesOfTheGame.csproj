@@ -313,6 +313,7 @@
     <Content Include="Views\Game\Guide_The_Goat.cshtml" />
     <Content Include="Views\Game\TeeTrees.cshtml" />
     <Content Include="Views\Game\Bubble_Pop.cshtml" />
+    <Content Include="Views\Home\HighScore.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
