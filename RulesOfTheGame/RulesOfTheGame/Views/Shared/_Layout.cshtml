@@ -9,6 +9,27 @@
 
 </head>
 <body>
+    <script>
+        function getComments() {
+            $.ajax({
+                type: 'GET',
+                url: '/Shared/getComments',
+                contentType: 'application/json',
+                async: false
+            })
+            .done(function (messages) {
+                messages = JSON.parse(messages);
+                for (var i = 0; i < messages.length; i++) {
+                    var temp = messages[i].UserName;
+                    var temp2 = messages[i].Comment;
+
+                    $('#UserName').append('<b>' + messages[i].UserName + ' </b>');
+                    $('#Comment').append(messages[i].Comment);
+                }
+            })
+            .fail(function () { })
+        }
+    </script>
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -32,6 +53,17 @@
     </div>
     <div class="container body-content">
         @RenderBody()
+        <br />
+        <label class="commentLabel"><strong>Comments:</strong></label>
+        <div id="comments" class="center">
+            <div class="comment">
+                <div id="UserName"></div><div id="Comment"></div>
+            </div>
+            <textarea class="form-control"></textarea>
+            <br />
+            <button id="submitComment" class="btn btn-primary">Submit</button>
+
+        </div>
         <hr />
         <footer>
             <p>RulesOfTheGame &copy; @DateTime.Now.Year</p>

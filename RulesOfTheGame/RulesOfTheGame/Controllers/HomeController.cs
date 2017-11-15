@@ -31,5 +31,6 @@ namespace RulesOfTheGame.Controllers
         {
             return View();
         }
+
     }
 }
