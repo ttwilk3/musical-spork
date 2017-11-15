@@ -35,3 +35,12 @@ textarea {
     padding-bottom: 10px;
     padding-left: 15px;
 }
+
+.comment-block {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    border:5px inset #df691a;
+    width:33%;
+    margin:10px;
+}

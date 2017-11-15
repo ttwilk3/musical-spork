@@ -103,7 +103,7 @@ namespace RulesOfTheGame.Controllers
             DataTable comments = new DataTable();
             try
             {
-                string getComments = "SELECT DISTINCT Id FROM USERCOMMENT";
+                string getComments = "SELECT * FROM USERCOMMENT";
                 SqlDataAdapter dataAdapter = new SqlDataAdapter(getComments, connectionString);
 
                 SqlCommandBuilder commandBuilder = new SqlCommandBuilder(dataAdapter);
