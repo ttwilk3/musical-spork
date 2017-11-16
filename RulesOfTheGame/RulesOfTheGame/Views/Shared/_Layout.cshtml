@@ -35,6 +35,24 @@
         $(document).ready(function () {
             getComments();
         });
+
+        function submitComment() {
+            var comment = {message: $('#commentBox').val()}
+            $.ajax({
+                type: 'GET',
+                url: '/Shared/submitComment',
+                data: comment,
+                contentType: 'application/json',
+                async: false
+            })
+            .done(function () {
+            })
+            .fail(function () { })
+
+            $('#comments').empty();
+            $('#commentBox').val('');
+            getComments();
+        }
     </script>
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
@@ -65,9 +83,9 @@
             <div class="comment" id="comments">
                 
             </div>
-            <textarea class="form-control"></textarea>
+            <textarea class="form-control" id="commentBox"></textarea>
             <br />
-            <button id="submitComment" class="btn btn-primary" onclick="">Submit</button>
+            <button id="submitComment" class="btn btn-primary" onclick="submitComment()">Submit</button>
 
         </div>
         <hr />

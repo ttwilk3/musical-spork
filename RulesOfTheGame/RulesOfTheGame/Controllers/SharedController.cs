@@ -98,6 +98,33 @@ namespace RulesOfTheGame.Controllers
                 return View();
             }
         }
+
+        public class Comment
+        {
+            public string message { get; set; }
+        }
+
+        public void submitComment(Comment newComment)
+        {
+            try
+            {
+                string userID = User.Identity.Name;
+
+                string insertCommand = "INSERT INTO USERCOMMENT (UserName, Comment) VALUES ('" + userID + "', '" + newComment.message + "')";
+
+                SqlCommand ins = new SqlCommand(insertCommand);
+
+                ins.Connection = new SqlConnection(connectionString);
+
+                ins.Connection.Open();
+
+                ins.ExecuteNonQuery();
+            }
+            catch
+            {
+
+            }
+        }
         public string getComments()
         {
             DataTable comments = new DataTable();
