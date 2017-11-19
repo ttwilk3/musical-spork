@@ -105,6 +105,7 @@ function occupied(type, x, y, dir) {
         if ((x < 0) || (x >= nx) || (y < 0) || (y >= ny) || getBlock(x, y))
             result = true;
     });
+   
     return result;
 }
 
