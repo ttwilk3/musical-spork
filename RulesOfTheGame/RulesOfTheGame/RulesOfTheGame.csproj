@@ -227,6 +227,7 @@
     <Content Include="Content\Bubble_Pop\bubble.png" />
     <Content Include="Content\Bubble_Pop\bubbles.js" />
     <Content Include="Content\Bubble_Pop\draw.js" />
+    <Content Include="Content\Flappy_Bird\gamescripts.txt" />
     <Content Include="Content\Guide_The_Goat\js\Dirt2.png" />
     <Content Include="Content\Guide_The_Goat\js\Key.png" />
     <Content Include="Content\Guide_The_Goat\js\player.png" />
@@ -238,12 +239,13 @@
     <Content Include="Content\Guide_The_Goat\js\preload.js" />
     <Content Include="Content\images\screenshots\bubbleScreenshot.PNG" />
     <Content Include="Content\images\screenshots\Flappy-Bird-Screenshot.png" />
+    <Content Include="Content\images\screenshots\goatScreenshot.PNG" />
     <Content Include="Content\libraries\p5.dom.js" />
     <Content Include="Content\libraries\p5.js" />
     <Content Include="Content\superherotheme.css" />
     <Content Include="Content\Teetrees\game_logic.js" />
     <Content Include="Content\Teetrees\stats.js" />
-    <Content Include="Content\Teetrees\TeetreesThumbnail.png" />
+    <Content Include="Content\images\screenshots\TeetreesThumbnail.png" />
     <Content Include="Content\Teetrees\texture.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -276,6 +278,7 @@
     <Content Include="Content\Flappy_Bird\sketch.js" />
     <Content Include="Content\Flappy_Bird\tube1.png" />
     <Content Include="Content\Flappy_Bird\tube2.png" />
+    <Content Include="Views\Home\gamesmanifest.txt" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -315,11 +318,11 @@
     <Content Include="Views\Game\TeeTrees.cshtml" />
     <Content Include="Views\Game\Bubble_Pop.cshtml" />
     <Content Include="Views\Home\HighScore.cshtml" />
+    <Content Include="Views\Home\DynamicGamePage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\Guide_The_Goat\assets\" />
-    <Folder Include="Content\images\Flappy_Bird\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -332,6 +335,10 @@
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationManifest>Views\Home\gamesmanifest.txt</ApplicationManifest>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />

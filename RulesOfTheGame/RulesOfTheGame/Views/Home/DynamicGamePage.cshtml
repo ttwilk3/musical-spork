@@ -1,0 +1,52 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    var webpage = ViewData["Webpage"];
+
+    var result = "";
+    Array userData = null;
+    char[] delimiterChar = { ',' };
+
+    var dataFile = Server.MapPath("~/Content/" + webpage + "/gamescripts.txt");
+
+    if (File.Exists(dataFile))
+    {
+        userData = File.ReadAllLines(dataFile);
+        if (userData == null)
+        {
+            // Empty file.
+            result = "The file is empty.";
+        }
+    }
+    else
+    {
+        // File does not exist.
+        result = "The file does not exist.";
+    }
+}
+
+@{
+    int i = 0;
+    foreach (string s in userData)
+    {
+        if (i == 0)
+        {
+            <h2>@s</h2>;
+        }
+
+        if (i > 0)
+        {
+            <script language="javascript" type="text/javascript" src="@s"></script>;
+        }
+        i++;
+    }
+}
+
+<script>
+    var root = "@Url.Content("~")";
+</script>
+
+<div id="sketch-holder">
+</div>

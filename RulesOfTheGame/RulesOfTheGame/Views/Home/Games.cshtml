@@ -3,7 +3,45 @@
 }
 <h2>@ViewBag.Title.</h2>
 <h3>@ViewBag.Message</h3>
+
+@{
+    var result = "";
+    Array userData = null;
+    char[] delimiterChar = { ',' };
+
+    var dataFile = Server.MapPath("~/Views/Home/gamesmanifest.txt");
+
+    if (File.Exists(dataFile))
+    {
+        userData = File.ReadAllLines(dataFile);
+        if (userData == null)
+        {
+            // Empty file.
+            result = "The file is empty.";
+        }
+    }
+    else
+    {
+        // File does not exist.
+        result = "The file does not exist.";
+    }
+}
+
 <div class="row">
+    @foreach (string s in userData)
+    {
+        //@:console.log("@s");
+        string[] names = s.Split(',');
+        string temp = names[0];
+        temp = temp.Replace(' ', '_');
+        <div class="col-md-3">
+            <h4>@Html.ActionLink(names[0], "DynamicGamePage", "Home", new { id = temp }, null)</h4>
+            <img src="~/Content/images/screenshots/@names[1]" height="256" width="192" />
+        </div>
+    }
+</div>
+
+@*<div class="row">
     <div class="col-md-3">
         <h4>@Html.ActionLink("Flappy Bird", "Flappy_Bird", "Game")</h4>
         <img src="~/Content/images/screenshots/Flappy-Bird-Screenshot.png" height="256" width="192"/>
@@ -24,4 +62,4 @@
             <img src="~/Content/images/screenshots/bubbleScreenshot.PNG" height="256" width="192" />
         </div>
     </div>
-</div>
+</div>*@

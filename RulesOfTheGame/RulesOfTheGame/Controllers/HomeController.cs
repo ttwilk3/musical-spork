@@ -31,6 +31,12 @@ namespace RulesOfTheGame.Controllers
         {
             return View();
         }
+    
+        public ActionResult DynamicGamePage(string id)
+        {
+            ViewData["Webpage"] = id;
+            return View();
+        }
 
     }
 }
