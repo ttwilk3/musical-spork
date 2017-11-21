@@ -243,9 +243,10 @@
     <Content Include="Content\libraries\p5.dom.js" />
     <Content Include="Content\libraries\p5.js" />
     <Content Include="Content\superherotheme.css" />
+    <Content Include="Content\Teetrees\gamescripts.txt" />
     <Content Include="Content\Teetrees\game_logic.js" />
     <Content Include="Content\Teetrees\stats.js" />
-    <Content Include="Content\images\screenshots\TeetreesThumbnail.png" />
+    <Content Include="Content\images\screenshots\Teetrees-Screenshot.PNG" />
     <Content Include="Content\Teetrees\texture.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
