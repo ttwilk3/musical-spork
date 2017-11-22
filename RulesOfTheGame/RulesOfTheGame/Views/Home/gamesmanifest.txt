@@ -1,4 +1,4 @@
 ﻿Flappy Bird,Flappy-Bird-Screenshot.png
 Bubble Pop,bubbleScreenshot.PNG
 Guide The Goat,goatScreenshot.png
-TeeTrees,Teetrees-Screenshot.PNG
+TeeTrees,TeetreesScreenshot.png

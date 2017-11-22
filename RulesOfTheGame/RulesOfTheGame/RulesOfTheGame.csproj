@@ -244,14 +244,23 @@
     <Content Include="Content\images\screenshots\bubbleScreenshot.PNG" />
     <Content Include="Content\images\screenshots\Flappy-Bird-Screenshot.png" />
     <Content Include="Content\images\screenshots\goatScreenshot.PNG" />
+    <Content Include="Content\images\screenshots\TeetreesScreenshot.png" />
     <Content Include="Content\libraries\p5.dom.js" />
     <Content Include="Content\libraries\p5.js" />
     <Content Include="Content\superherotheme.css" />
+    <Content Include="Content\TeeTrees\bgImage.png" />
+    <Content Include="Content\TeeTrees\board.js" />
+    <Content Include="Content\TeeTrees\boxShape.js" />
     <Content Include="Content\TeeTrees\gamescripts.txt" />
-    <Content Include="Content\TeeTrees\game_logic.js" />
-    <Content Include="Content\TeeTrees\stats.js" />
-    <Content Include="Content\images\screenshots\Teetrees-Screenshot.PNG" />
-    <Content Include="Content\TeeTrees\texture.jpg" />
+    <Content Include="Content\TeeTrees\lineShape.js" />
+    <Content Include="Content\TeeTrees\lOpShape.js" />
+    <Content Include="Content\TeeTrees\lShape.js" />
+    <Content Include="Content\TeeTrees\OPENME!.html" />
+    <Content Include="Content\TeeTrees\sketch.js" />
+    <Content Include="Content\TeeTrees\square.js" />
+    <Content Include="Content\TeeTrees\sShape.js" />
+    <Content Include="Content\TeeTrees\tShape.js" />
+    <Content Include="Content\TeeTrees\zShape.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -263,6 +272,7 @@
     </Content>
     <Content Include="Content\Guide_The_Goat\js\level1.json" />
     <Content Include="Content\Guide_The_Goat\js\level2.json" />
+    <Content Include="Content\TeeTrees\sketch.js~" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

@@ -1,1 +1,14 @@
 ﻿Teetrees
+../../Content/libraries/p5.js
+../../Content/libraries/p5.dom.js
+../../Content/libraries/p5.sound.js
+../../Content/Teetrees/sketch.js
+../../Content/Teetrees/board.js
+../../Content/Teetrees/boxShape.js
+../../Content/Teetrees/lineShape.js
+../../Content/Teetrees/lShape.js
+../../Content/Teetrees/lOpShape.js
+../../Content/Teetrees/square.js
+../../Content/Teetrees/sShape.js
+../../Content/Teetrees/tShape.js
+../../Content/Teetrees/zShape.js
