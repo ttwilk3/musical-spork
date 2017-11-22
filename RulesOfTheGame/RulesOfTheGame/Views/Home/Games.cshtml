@@ -27,6 +27,19 @@
     }
 }
 
+@using (Html.BeginForm("Games", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div style="border:1px groove grey; padding:5px; width:33%; text-align:center; vertical-align:middle;">
+        <h2>Upload New Game</h2>
+        <div>
+            <input type="file" name="zip"/><br />
+        </div>
+        <div>
+            <button class="btn btn-default">Submit</button>
+        </div>
+    </div>
+}
+
 <div class="row">
     @foreach (string s in userData)
     {
@@ -34,10 +47,17 @@
         string[] names = s.Split(',');
         string temp = names[0];
         temp = temp.Replace(' ', '_');
-        <div class="col-md-3">
-            <h4>@Html.ActionLink(names[0], "DynamicGamePage", "Home", new { id = temp }, null)</h4>
-            <img src="~/Content/images/screenshots/@names[1]" height="256" width="192" />
-        </div>
+        if (names.Length < 2 || temp.IsEmpty())
+        {
+
+        }
+        else
+        {
+            <div class="col-md-3">
+                <h4>@Html.ActionLink(names[0], "DynamicGamePage", "Home", new { id = temp }, null)</h4>
+                <img src="~/Content/images/screenshots/@names[1]" height="256" width="192" />
+            </div>
+        }
     }
 </div>
 
