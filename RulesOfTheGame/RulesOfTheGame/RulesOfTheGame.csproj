@@ -227,6 +227,7 @@
     <Content Include="Content\Bubble_Pop\bubble.png" />
     <Content Include="Content\Bubble_Pop\bubbles.js" />
     <Content Include="Content\Bubble_Pop\draw.js" />
+    <Content Include="Content\Bubble_Pop\gamescripts.txt" />
     <Content Include="Content\Flappy_Bird\gamescripts.txt" />
     <Content Include="Content\Guide_The_Goat\js\Dirt2.png" />
     <Content Include="Content\Guide_The_Goat\js\Key.png" />
@@ -243,11 +244,11 @@
     <Content Include="Content\libraries\p5.dom.js" />
     <Content Include="Content\libraries\p5.js" />
     <Content Include="Content\superherotheme.css" />
-    <Content Include="Content\Teetrees\gamescripts.txt" />
-    <Content Include="Content\Teetrees\game_logic.js" />
-    <Content Include="Content\Teetrees\stats.js" />
+    <Content Include="Content\TeeTrees\gamescripts.txt" />
+    <Content Include="Content\TeeTrees\game_logic.js" />
+    <Content Include="Content\TeeTrees\stats.js" />
     <Content Include="Content\images\screenshots\Teetrees-Screenshot.PNG" />
-    <Content Include="Content\Teetrees\texture.jpg" />
+    <Content Include="Content\TeeTrees\texture.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
