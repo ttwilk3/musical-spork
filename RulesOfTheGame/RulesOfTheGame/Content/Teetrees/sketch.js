@@ -9,9 +9,15 @@ var move=level-1;
 var speed =10;
 var frame =60;
 var score = 0;
+var highScore = 0;
 var scoreP;
 var hscoreP;
 var bg;
+
+function preload() {
+    bg = loadImage(root + "Content/Teetrees/bgImage.png")
+    
+}
 
 function setup() {
   setFrameRate(frame);
@@ -21,7 +27,10 @@ function setup() {
   current = new ranShape();
   score = createP("Score : " + score);
   score.parent('sketch-holder');
-  bg = loadImage(root + "Content/Teetrees/bgImage.png")
+  hscoreP = createP("High Score: " + highScore);
+  hscoreP.parent('sketch-holder');
+  
+ 
   
 }
 
@@ -29,6 +38,7 @@ function draw() {
     background(bg);
     board.display();
     current.display();
+    
     
 
     move++;
@@ -38,8 +48,11 @@ function draw() {
             board.addToBoard(current);
             board.checkLines();
             score.html("Score : " + board.updateScore());
+            checkHighScore();
             current = ranShape();
             current.settled = collisionFall();
+
+           
 
            
             if (current.settled) {
@@ -48,6 +61,7 @@ function draw() {
                 canvas.remove()
                 var GOver = createP("GAME OVER");
                 GOver.parent('sketch-holder');
+
                 $('#sketch-holder').append('<button class="btn btn-primary" onClick=\'tryAgain()\'>Try Again?</button>')
             }
         }
@@ -55,6 +69,12 @@ function draw() {
         move = 0;
     }
 
+}
+
+
+function checkHighScore() {
+    if (score > highScore)
+        highScore = score;
 }
 
 function tryAgain() {

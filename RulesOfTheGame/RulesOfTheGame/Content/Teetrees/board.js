@@ -4,6 +4,7 @@ function Board() {
   this.xpos = 100;
   this.ypos = 10;
   this.squares = [];
+  this.highScore = 0;
   this.score =0;
   this.mul =0.5;
   this.linesRem = 0;
@@ -45,6 +46,14 @@ function Board() {
     this.linesRem=0;
     this.mul =0.5;
     return this.score;
+  }
+
+  this.updateHScore = function () {
+      this.highScore += (this.mul * this.linesRem * 10);
+      console.log(this.highScore);
+      this.linesRem = 0;
+      this.mul = 0.5;
+      return this.highScore;
   }
 
   this.checkLines = function() {
