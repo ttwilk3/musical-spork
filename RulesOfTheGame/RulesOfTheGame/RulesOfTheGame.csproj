@@ -232,6 +232,7 @@
     <Content Include="Content\Bubble_Pop\draw.js" />
     <Content Include="Content\Bubble_Pop\gamescripts.txt" />
     <Content Include="Content\Flappy_Bird\gamescripts.txt" />
+    <Content Include="Content\Guide_The_Goat\gamescripts.txt" />
     <Content Include="Content\Guide_The_Goat\js\Dirt2.png" />
     <Content Include="Content\Guide_The_Goat\js\Key.png" />
     <Content Include="Content\Guide_The_Goat\js\player.png" />
