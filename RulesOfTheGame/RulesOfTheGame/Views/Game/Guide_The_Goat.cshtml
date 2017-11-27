@@ -15,28 +15,31 @@
 <script type="text/javascript" src="~/Content/Guide_The_Goat/js/gameover.js"></script>
 <style type="text/css">
     body {
-        margin: 0;
+        padding-left:230px;
     }
+
 </style>
-<div id="sketch-holder">
-    <script type="text/javascript">
-	(function() {
 
-			//Create a new game that fills the screen
-			game = new Phaser.Game(window.innerWidth * window.devicePixelRatio, window.innerHeight * window.devicePixelRatio, Phaser.AUTO);
+    <div id="sketch-holder" class="center">
+        <script type="text/javascript">
+            (function () {
 
-			//Add all states
-			game.state.add("Boot", Boot);
-			game.state.add("Preload", Preload);
-			game.state.add("GameTitle", GameTitle);
-			game.state.add("Main", Main);
-			game.state.add("GameOver", GameOver);
+                //Create a new game that fills the screen
+                game = new Phaser.Game(1500 * window.devicePixelRatio, 1000 * window.devicePixelRatio, Phaser.AUTO);
 
-			//Start the first state
-			game.state.start("Boot");
+                //Add all states
+                game.state.add("Boot", Boot);
+                game.state.add("Preload", Preload);
+                game.state.add("GameTitle", GameTitle);
+                game.state.add("Main", Main);
+                game.state.add("GameOver", GameOver);
 
-	})();
-    </script>
-</div>
+                //Start the first state
+                game.state.start("Boot");
+
+            })();
+        </script>
+    </div>
+
 
 
