@@ -45,7 +45,9 @@ function endGame(){
         canvas.remove();
         var gameOver = createP("GAME OVER");
         gameOver.parent('sketch-holder');
-        $('#sketch-holder').append('<button class="btn btn-primary" onClick=\'tryAgain()\'>Try Again?</button>')
+        $('#sketch-holder').append('<button class="btn btn-primary" onClick=\'tryAgain()\'>Try Again?</button>');
+
+        newScore(score, "Bubble Pop");
     }
 }
 
