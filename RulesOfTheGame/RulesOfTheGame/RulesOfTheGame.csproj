@@ -234,6 +234,7 @@
     <Content Include="Content\Flappy_Bird\gamescripts.txt" />
     <Content Include="Content\Guide_The_Goat\gamescripts.txt" />
     <Content Include="Content\Guide_The_Goat\js\Dirt2.png" />
+    <Content Include="Content\Guide_The_Goat\js\first.js" />
     <Content Include="Content\Guide_The_Goat\js\Key.png" />
     <Content Include="Content\Guide_The_Goat\js\player.png" />
     <Content Include="Content\Guide_The_Goat\js\boot.js" />

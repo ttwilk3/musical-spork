@@ -1,5 +1,6 @@
 ﻿Guide The Goat
 ../../Content/Guide_The_Goat/js/phaser.min.js
+../../Content/Guide_The_Goat/js/first.js
 ../../Content/Guide_The_Goat/js/boot.js
 ../../Content/Guide_The_Goat/js/preload.js
 ../../Content/Guide_The_Goat/js/gametitle.js
