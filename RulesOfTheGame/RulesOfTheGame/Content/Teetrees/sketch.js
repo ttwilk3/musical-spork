@@ -27,8 +27,8 @@ function setup() {
   current = new ranShape();
   score = createP("Score : " + score);
   score.parent('sketch-holder');
-  hscoreP = createP("High Score: " + highScore);
-  hscoreP.parent('sketch-holder');
+  //hscoreP = createP("High Score: " + highScore);
+  //hscoreP.parent('sketch-holder');
   
  
   
@@ -63,6 +63,7 @@ function draw() {
                 GOver.parent('sketch-holder');
 
                 $('#sketch-holder').append('<button class="btn btn-primary" onClick=\'tryAgain()\'>Try Again?</button>')
+                newScore(score, "TeeTrees");
             }
         }
         current.fall();
