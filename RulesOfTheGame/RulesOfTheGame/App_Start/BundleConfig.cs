@@ -23,6 +23,9 @@ namespace RulesOfTheGame
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/score").Include(
+                      "~/Scripts/score.js"));
+
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/superherotheme.css",
                       "~/Content/site.css"));

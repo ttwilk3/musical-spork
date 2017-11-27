@@ -37,8 +37,24 @@ tr td:hover { background: #666; color: #FFF; }
 /* Hover cell effect! */
 </style>
 
-<table>
+<script>
+    var bestScores;
+    $(document).ready(function () {
+        getBestScores();
+        console.log(bestScores);
+        for (var i = 0; i < bestScores.length; i++) {
+            $('#highScore').append('<tr><td>' + bestScores[i].Game + '</td><td>' + bestScores[i].User + '</td><td>' + bestScores[i].Val + '</td></tr>');
+        }
+    });
+</script>
+
+<table id="highScore">
     <tr>
+        <th>Game</th>
+        <th>User</th>
+        <th>Score</th>
+    </tr>
+    @*<tr>
         <th>Flappy Bird</th>
         <th>Guide The Goat</th>
         <th>Bubble Pop</th>
@@ -49,6 +65,6 @@ tr td:hover { background: #666; color: #FFF; }
         <td>100</td>
         <td>400</td>
         <td>1000</td>
-    </tr>
+    </tr>*@
 </table>
 

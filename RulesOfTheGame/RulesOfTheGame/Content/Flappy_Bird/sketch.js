@@ -20,8 +20,8 @@
         canvas.parent('sketch-holder');
         scoreP = createP("Score: " + score);
         scoreP.parent('sketch-holder');
-        hscoreP = createP("High score: " + highScore);
-        hscoreP.parent('sketch-holder');
+        //hscoreP = createP("High score: " + highScore);
+        //hscoreP.parent('sketch-holder');
         bird = new Bird();
         pipes.push(new Pipe());
     }
@@ -59,14 +59,14 @@
             pipes.push(new Pipe());
         }
         //score++;
-        if (score > highScore) {
-            highScore = score;
-        }
+        //if (score > highScore) {
+        //    highScore = score;
+        //}
         removeElements();
         scoreP = createP("Score: " + floor(score));
         scoreP.parent('sketch-holder');
-        hscoreP = createP("High score: " + floor(highScore));
-        hscoreP.parent('sketch-holder');
+        //hscoreP = createP("High score: " + floor(highScore));
+        //hscoreP.parent('sketch-holder');
 
         //if (score < -1000) {
         if (isGameOver == true) {
@@ -78,7 +78,8 @@
             //tryAgainButton = createButton('TRY AGAIN?');
             //tryAgainButton.mousePressed(tryAgain);
             //tryAgainButton.parent('sketch-holder');
-            $('#sketch-holder').append('<button class="btn btn-primary" onClick=\'tryAgain()\'>Try Again?</button>')
+            $('#sketch-holder').append('<button class="btn btn-primary" onClick=\'tryAgain()\'>Try Again?</button>');
+            newScore(score, "Flappy Bird");
         }
     }
 
