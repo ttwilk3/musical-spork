@@ -27,17 +27,20 @@
     }
 }
 
-@using (Html.BeginForm("Games", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+@if (User.IsInRole("Admin"))
 {
-    <div style="border:1px groove grey; padding:5px; width:33%; text-align:center; vertical-align:middle;">
-        <h2>Upload New Game</h2>
-        <div>
-            <input type="file" name="zip"/><br />
+    using (Html.BeginForm("Games", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        <div style="border:1px groove grey; padding:5px; width:33%; text-align:center; vertical-align:middle;">
+            <h2>Upload New Game</h2>
+            <div>
+                <input type="file" name="zip"/><br />
+            </div>
+            <div>
+                <button class="btn btn-default">Submit</button>
+            </div>
         </div>
-        <div>
-            <button class="btn btn-default">Submit</button>
-        </div>
-    </div>
+    }
 }
 
 <div class="row">

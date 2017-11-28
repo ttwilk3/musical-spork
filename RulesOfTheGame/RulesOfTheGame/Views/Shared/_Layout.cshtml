@@ -85,10 +85,13 @@
             <div class="comment" id="comments">
                 
             </div>
-            <textarea class="form-control" id="commentBox"></textarea>
-            <br />
-            <button id="submitComment" class="btn btn-primary" onclick="submitComment()">Submit</button>
 
+            @if (User.Identity.IsAuthenticated)
+            {
+                <textarea class="form-control" id="commentBox"></textarea>
+                <br />
+                <button id="submitComment" class="btn btn-primary" onclick="submitComment()">Submit</button>
+            }
         </div>
         <hr />
         <footer>

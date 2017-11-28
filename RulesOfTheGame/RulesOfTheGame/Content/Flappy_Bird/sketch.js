@@ -87,8 +87,8 @@
         location.reload();
     }
 
-    function keyPressed() {
-        if (key == ' ') {
+    function keyTyped() {
+        if (key == 'w') {
             bird.up();
         }
     }
