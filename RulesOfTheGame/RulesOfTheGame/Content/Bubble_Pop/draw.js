@@ -1,6 +1,5 @@
 var bubbles = [];
 var score = 0;
-var highScore = 0;
 var lives = 3;
 var canvas;
 var bg;
@@ -10,9 +9,10 @@ function setup() {
     canvas.parent('sketch-holder');
     scoreP = createP("Score: " + score);
     scoreP.parent('sketch-holder');
-    hscoreP = createP("High score: " + highScore);
-    hscoreP.parent('sketch-holder');
-    bg = loadImage(root + "Content/Bubble_Pop/bg.jpg")
+    livesP = createP("Lives: " + lives);
+    livesP.parent('sketch-holder');
+
+    bg = loadImage(root + "Content/Bubble_Pop/bg.jpg");
 	for(i = 0; i < 10; i++) {
 		var x = random(width);
 		//var y = random(height);
@@ -30,7 +30,6 @@ function mousePressed() {
 
 function draw () {
     background(bg);
-    checkHighScore();
     displayScore();
 	for (var i = 0; i < bubbles.length; i++){
 		bubbles[i].move();
@@ -55,20 +54,11 @@ function tryAgain() {
     location.reload();
 }
 
-function checkHighScore() {
-    if (score > highScore)
-        highScore = score;
-}
 
 function displayScore() {
     removeElements();
     scoreP = createP("Score: " + floor(score));
     scoreP.parent('sketch-holder');
-    hscoreP = createP("High score: " + floor(highScore));
-    hscoreP.parent('sketch-holder');
+    livesP = createP("lives: " + lives);
+    livesP.parent('sketch-holder');
 }
-
-function checkScore(){
-
-}
-

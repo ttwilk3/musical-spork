@@ -97,6 +97,6 @@ Main.prototype = {
 
 	gameOver: function(){
 		this.game.state.start('GameOver');
-	},
+	}
 
 };

@@ -18,7 +18,7 @@ namespace RulesOfTheGame.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Information about the site.";
 
             return View();
         }
